@@ -1,6 +1,12 @@
-def add_guest(name):
-    return name
+class Guest:
 
+    def __init__(self, name, wallet, song):
+        self.name = name
+        self.wallet = wallet
+        self.song = song
+
+
+   
     
 
     

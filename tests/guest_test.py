@@ -3,10 +3,6 @@ from src.guest import *
 
 class TestGuest(unittest.TestCase):
 
-    def setUp(self):
-        self.guests = [
-            {"name": "Andrew"}
-        ]
+    def test_can_create_guest(self):
+        self.assertEqual("Andrew", Guest("Andrew", 10, "Toxic").name)
 
-    def test_guest_can_be_added(self):
-        self.assertEqual("Andrew", add_guest(self.guests[0]["name"]))
